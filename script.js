@@ -6,22 +6,29 @@ function clickFunction() {
   document.getElementById("title").style.fontSize = "100px";
 }
 
+var state = 0;
 function changeImage() {
   var current_src = document.getElementById("chococake").src;
-  if (current_src == "file:///Users/student/Documents/Web%20ideas/chococake.jpg"){
+  if (state == 0){
     document.getElementById("chococake").src = "chocake.jpg";
+    state = 1;
 }
   else {
     document.getElementById("chococake").src = "chococake.jpg";
+    state = 0;
   }
 }
+
+var state2 = 0;
 function changePicture() {
   var current_src = document.getElementById("cccookies").src;
-  if (current_src == "file:///Users/student/Documents/Web%20ideas/ccookies.jpg"){
+  if (state2 == 0){
     document.getElementById("cccookies").src = "chococookies.jpg";
+    state2 = 1;
 }
   else {
     document.getElementById("cccookies").src = "ccookies.jpg";
+    state2 = 0;
   }
 }
 
